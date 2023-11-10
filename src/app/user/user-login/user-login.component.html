@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 login-frame">
+      <h1 style="color: red; text-align: center;">User Login</h1>
+      <form (ngSubmit)="userLogin()">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email</label>
+          <input type="text" class="form-control" [(ngModel)]="user.email" id="email" name="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Password</label>
+          <input type="password" [(ngModel)]="user.password" class="form-control" id="password" name="password">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+      </form>
+    </div>
+  </div>
+</div>
